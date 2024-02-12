@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Tasbih</title>
+ <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <h1 class="text-3xl m-auto">Digital Tasbih</h1>
+ <div class="flex gap-2">
+
+    <div class="card w-96 bg-white text-3xl shadow-lg m-auto mt-80">
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Subhanallah</h2>
+          <p id="Subhanallah-display">0</p>
+          <div class="card-actions justify-end">
+            <button id="Subhanallah-increment" class="btn btn-primary">Increment</button>
+            <button id="Subhanallah-decrement" class="btn btn-error">Decrement</button>
+          </div>
+        </div>
+      </div>
+    <div class="card w-96 bg-white text-3xl shadow-lg m-auto mt-80">
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Alhamdulillah</h2>
+          <p id="Alhamdulillah-display">0</p>
+          <div class="card-actions justify-end">
+            <button id="Alhamdulillah-increment" class="btn btn-primary">Increment</button>
+            <button  id="Alhamdulillah-decrement" class="btn btn-error">Decrement</button>
+          </div>
+        </div>
+      </div>
+    <div class="card w-96 bg-white text-3xl shadow-lg m-auto mt-80">
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Allahu-akbar</h2>
+          <p id="Allahu-akbar-display">0</p>
+          <div class="card-actions justify-end">
+            <button id="Allahu-akbar-increment" class="btn btn-primary">Increment</button>
+            <button id="Allahu-akbar-decrement" class="btn btn-error">Decrement</button>
+          </div>
+        </div>
+      </div>
+ 
+ </div>
+ <div class="resetContainer lg:mt-10 mt-5 flex justify-center">
+  <button id="resetBtn"
+      class="select-none rounded-lg bg-yellow-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+      type="button" data-ripple-light="true">
+      Reset All Tasbih
+  </button>
+</div>
+ <script src="tasbih.js"></script>
+</body>
+</html>
